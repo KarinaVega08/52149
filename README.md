@@ -53,12 +53,6 @@ El Arbol lo mostrara al ejecutar la gramatica (Gramatica.g4) con F5.
 
 ## Uso de ejemplos
 
-Puedes ejecutar cualquier archivo de ejemplo directamente desde la terminal usando:
-npm start [correcto1.txt](http://vscodecontentref/1)
-
-o para otro ejemplo:
-
-npm start [incorrecto2.txt](http://vscodecontentref/2)
 
 ## Requisitos para que funcione este comando
 ## Node.js instalado.
