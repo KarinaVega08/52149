@@ -5,7 +5,7 @@ Este proyecto implementa un analizador léxico y sintáctico de archivos de meta
 
 ---
 
-## 🚀 Instalación
+## Instalación
 
 ### *Requisitos previos*
 
@@ -51,15 +51,9 @@ El proyecto está pensado para ejecutarse desde la terminal. El soporte de depur
 
 El Arbol lo mostrara al ejecutar la gramatica (Gramatica.g4) con F5.
 
-## ▶ Uso de ejemplos
+## Uso de ejemplos
 
 Puedes ejecutar cualquier archivo de ejemplo directamente desde la terminal usando:
-
-## ▶ Uso de ejemplos
-
-Puedes ejecutar cualquier archivo de ejemplo directamente desde la terminal usando:
-
-sh
 npm start [correcto1.txt](http://vscodecontentref/1)
 
 o para otro ejemplo:
