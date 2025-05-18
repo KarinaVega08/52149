@@ -1,8 +1,74 @@
 # 52149
-Requisitos:
-Antes de comenzar, asegúrate de tener instalados los siguientes programas:
+# Analizador de Metadatos con ANTLR4 y JavaScript
 
-Git: Para clonar el repositorio descarga Git https://git-scm.com/
-Node.js: Para ejecutar la aplicación Descarga Node.js https://nodejs.org/es
-Java: Necesario para compilar la gramática con ANTLR Descarga Java https://nodejs.org/es
-ANTLR4: Descarga el archivo JAR desde ANTLR https://www.antlr.org/download.html
+Este proyecto implementa un analizador léxico y sintáctico de archivos de metadatos usando [ANTLR4](https://www.antlr.org/) y JavaScript. Permite procesar archivos de texto con metadatos estructurados, mostrar el análisis léxico, sintáctico, el árbol de análisis y traducir los datos a una variable JavaScript.
+
+---
+
+## 🚀 Instalación
+
+### *Requisitos previos*
+
+- [Node.js](https://nodejs.org/) (v16 o superior)
+- [Java JRE/JDK](https://adoptium.net/) (para ejecutar ANTLR)
+- [ANTLR4](https://www.antlr.org/download.html) (descargar el .jar y ubicarlo en la raíz del proyecto)
+- [Git](https://git-scm.com/) (opcional, para clonar el repositorio)
+
+### *Pasos*
+
+1. *Clona el repositorio:*
+
+   sh
+   git clone https://github.com/Lean-52139/52139
+   cd 52139
+
+2. **Ejecuta el analizador**
+node [index.js](http://_vscodecontentref_/0)
+
+3. **¿Qué hace cada cosa?**
+**grammar/metadata.g4**
+Define la gramática del lenguaje de metadatos. Especifica los campos válidos, el formato de los valores y la estructura general del archivo.
+**generated/**
+Contiene los archivos generados automáticamente por ANTLR4 a partir de la gramática. Incluye el lexer, parser y visitor. No edites estos archivos a mano.
+**src/CustomMetadataVisitor.js**
+Implementa la lógica para recorrer el árbol sintáctico generado por ANTLR y construir un objeto JavaScript con los metadatos extraídos.
+**src/index.js**
+Script principal que:
+    Lee el archivo de entrada (input.txt)
+    Ejecuta el análisis léxico y muestra la tabla de tokens
+    Ejecuta el análisis sintáctico y muestra el árbol
+    Interpreta los datos y los traduce a una variable JavaScript
+**input.txt**
+Archivo de entrada con los metadatos a analizar. Debe seguir el formato definido en la gramática.
+
+4. **NOTAS**
+Si modificas la gramática (metadata.g4), debes volver a generar los archivos ANTLR con el comando indicado en la sección de instalación.
+
+El archivo de entrada no debe tener espacios antes del nombre del campo.
+
+Solo se aceptan los campos definidos en la gramática (nombre, tipo, tamano, tamaño, creado, modificado, autor, descripcion, etiquetas).
+
+Si hay errores de formato (campos desconocidos, falta de punto y coma, etc.), el analizador los reportará en consola.
+
+El proyecto está pensado para ejecutarse desde la terminal. El soporte de depuración en VS Code depende del plugin de ANTLR y no es necesario para el uso básico.
+
+El Arbol lo mostrara al ejecutar la gramatica (metadata.g4) con F5.
+
+## ▶ Uso de ejemplos
+
+Puedes ejecutar cualquier archivo de ejemplo directamente desde la terminal usando:
+
+## ▶ Uso de ejemplos
+
+Puedes ejecutar cualquier archivo de ejemplo directamente desde la terminal usando:
+
+sh
+npm start [correcto1.txt](http://vscodecontentref/1)
+
+o para otro ejemplo:
+
+npm start [incorrecto2.txt](http://vscodecontentref/2)
+
+## Requisitos para que funcione este comando
+## Node.js instalado.
+# Dependencias instaladas con:  npm install
