@@ -1,0 +1,4 @@
+imprimir("Hola mundo");
+mientras verdadero {
+  imprimir("Dentro del bucle");
+}
