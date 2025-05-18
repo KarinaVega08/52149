@@ -18,41 +18,38 @@ Este proyecto implementa un analizador léxico y sintáctico de archivos de meta
 
 1. *Clona el repositorio:*
 
-   sh
-   git clone https://github.com/Lean-52139/52139
-   cd 52139
+   
+https://github.com/KarinaVega08/52149.git
 
 2. **Ejecuta el analizador**
 node [index.js](http://_vscodecontentref_/0)
 
 3. **¿Qué hace cada cosa?**
-**grammar/metadata.g4**
-Define la gramática del lenguaje de metadatos. Especifica los campos válidos, el formato de los valores y la estructura general del archivo.
+   **Gramatica.g4**
+Define la gramática del lenguaje. Especifica los campos válidos, el formato de los valores y la estructura general del archivo.
 **generated/**
 Contiene los archivos generados automáticamente por ANTLR4 a partir de la gramática. Incluye el lexer, parser y visitor. No edites estos archivos a mano.
-**src/CustomMetadataVisitor.js**
+   **CustomGramaticaVisitor.js**
 Implementa la lógica para recorrer el árbol sintáctico generado por ANTLR y construir un objeto JavaScript con los metadatos extraídos.
-**src/index.js**
+   **index.js**
 Script principal que:
     Lee el archivo de entrada (input.txt)
     Ejecuta el análisis léxico y muestra la tabla de tokens
     Ejecuta el análisis sintáctico y muestra el árbol
     Interpreta los datos y los traduce a una variable JavaScript
 **input.txt**
-Archivo de entrada con los metadatos a analizar. Debe seguir el formato definido en la gramática.
+Archivo de entrada. Debe seguir el formato definido en la gramática.
 
 4. **NOTAS**
 Si modificas la gramática (metadata.g4), debes volver a generar los archivos ANTLR con el comando indicado en la sección de instalación.
 
 El archivo de entrada no debe tener espacios antes del nombre del campo.
 
-Solo se aceptan los campos definidos en la gramática (nombre, tipo, tamano, tamaño, creado, modificado, autor, descripcion, etiquetas).
-
 Si hay errores de formato (campos desconocidos, falta de punto y coma, etc.), el analizador los reportará en consola.
 
 El proyecto está pensado para ejecutarse desde la terminal. El soporte de depuración en VS Code depende del plugin de ANTLR y no es necesario para el uso básico.
 
-El Arbol lo mostrara al ejecutar la gramatica (metadata.g4) con F5.
+El Arbol lo mostrara al ejecutar la gramatica (Gramatica.g4) con F5.
 
 ## ▶ Uso de ejemplos
 
