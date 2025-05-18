@@ -1,5 +1,4 @@
 # 52149
-Analizador Sintaxis y Semántica de los lenguajes
 Requisitos:
 Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 
