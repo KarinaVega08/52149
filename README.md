@@ -1,5 +1,5 @@
 # 52149
-# Analizador de Metadatos con ANTLR4 y JavaScript
+# Analizador 
 
 Este proyecto implementa un analizador léxico y sintáctico de archivos usando [ANTLR4](https://www.antlr.org/) y JavaScript. Permite procesar archivos de texto con metadatos estructurados, mostrar el análisis léxico, sintáctico, el árbol de análisis y traducir los datos a una variable JavaScript.
 
