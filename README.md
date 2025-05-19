@@ -1,11 +1,9 @@
 # 52149
 # Analizador de Metadatos con ANTLR4 y JavaScript
 
-Este proyecto implementa un analizador léxico y sintáctico de archivos de metadatos usando [ANTLR4](https://www.antlr.org/) y JavaScript. Permite procesar archivos de texto con metadatos estructurados, mostrar el análisis léxico, sintáctico, el árbol de análisis y traducir los datos a una variable JavaScript.
+Este proyecto implementa un analizador léxico y sintáctico de archivos usando [ANTLR4](https://www.antlr.org/) y JavaScript. Permite procesar archivos de texto con metadatos estructurados, mostrar el análisis léxico, sintáctico, el árbol de análisis y traducir los datos a una variable JavaScript.
 
 ---
-
-## Instalación
 
 ### *Requisitos previos*
 
@@ -16,15 +14,22 @@ Este proyecto implementa un analizador léxico y sintáctico de archivos de meta
 
 ### *Pasos*
 
-1. *Clona el repositorio:*
+1. *Abre una terminal o consola de comandos (cmd).*
+2. *Ubícate en la carpeta donde quieras tener el proyecto.
+(git clone)* 
+3. *Ejecuta el siguiente comando para clonar el repositorio:*
+   https://github.com/KarinaVega08/52149.git
+4. Una vez clonado, entra en la carpeta del proyecto
+    cd 52149
+5. Abre VS Code para trabajar con el código del proyecto. Para esto ejecuta en la ventana de comandos abierta
+   code .
 
-   
-https://github.com/KarinaVega08/52149.git
 
-2. **Ejecuta el analizador**
-node [index.js](http://_vscodecontentref_/0)
+6. **Ejecuta el analizador**
+node index.js
+7. *Para comprobar los ejemplos correctos e incorrectos reemplazalos en input.txt y aparecerá el error que tienen o en su defecto funcionarán correctamente.
 
-3. **¿Qué hace cada cosa?**
+ **¿Qué hace cada cosa?**
    **Gramatica.g4**
 Define la gramática del lenguaje. Especifica los campos válidos, el formato de los valores y la estructura general del archivo.
 **generated/**
