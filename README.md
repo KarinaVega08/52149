@@ -51,9 +51,6 @@ El proyecto está pensado para ejecutarse desde la terminal. El soporte de depur
 
 El Arbol lo mostrara al ejecutar la gramatica (Gramatica.g4) con F5.
 
-## Uso de ejemplos
-
-
 ## Requisitos para que funcione este comando
-## Node.js instalado.
+Node.js instalado.
 # Dependencias instaladas con:  npm install
