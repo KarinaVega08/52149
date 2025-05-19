@@ -1,0 +1,2 @@
+imprimir("Hola mundo")
+//Falta punto y coma, por lo tanto es incorrecto

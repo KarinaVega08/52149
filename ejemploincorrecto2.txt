@@ -1,0 +1,4 @@
+mientras tal_vez {
+  imprimir("Nunca entra aquí");
+}
+//Error: tal_vez no es una condición válida, solo se permite verdadero o falso.

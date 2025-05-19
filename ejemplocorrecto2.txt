@@ -1,0 +1,4 @@
+mientras verdadero {
+  imprimir("Dentro del bucle");
+  imprimir("Otra línea");
+}
