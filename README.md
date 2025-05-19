@@ -46,7 +46,7 @@ Script principal que:
 Archivo de entrada. Debe seguir el formato definido en la gramática.
 
 4. **NOTAS**
-Si modificas la gramática (metadata.g4), debes volver a generar los archivos ANTLR con el comando indicado en la sección de instalación.
+Si modificas la gramática (Gramatica.g4), debes volver a generar los archivos ANTLR con el comando indicado en la sección de instalación.
 
 El archivo de entrada no debe tener espacios antes del nombre del campo.
 
@@ -56,6 +56,6 @@ El proyecto está pensado para ejecutarse desde la terminal. El soporte de depur
 
 El Arbol lo mostrara al ejecutar la gramatica (Gramatica.g4) con F5.
 
-## Requisitos para que funcione este comando
-Node.js instalado.
+## Requisitos para que funcione este comando: Node.js instalado.
+
 # Dependencias instaladas con:  npm install
